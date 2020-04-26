@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.font-serif {
+  font-family: "PT Serif", serif;
+}
+.font-sans {
+  font-family: "Nunito Sans", sans-serif;
+}

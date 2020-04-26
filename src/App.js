@@ -1,5 +1,5 @@
 import React from "react";
-import { Articles, Menu } from "./components";
+import { Articles, Menu, Banner } from "./components";
 import "./tailwind.generated.css";
 
 export function App() {
@@ -8,6 +8,7 @@ export function App() {
       <div className="mx-5">
         <Menu />
         <hr />
+        <Banner></Banner>
       </div>
       <Articles />
     </div>

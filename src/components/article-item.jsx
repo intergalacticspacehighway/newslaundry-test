@@ -1,14 +1,18 @@
 import React from "react";
 import format from "date-fns/format";
+import { randomImages } from "../services/utils";
 
 export function ArticleItem({ item }) {
+  const randomImage =
+    randomImages[Math.floor(Math.random() * randomImages.length)];
+
   return (
     <div className="max-w-md rounded overflow-hidden shadow">
       <div className="overflow-hidden">
         <img
           className="w-full h-full transform hover:scale-150 transition ease-in-out duration-300"
-          src="https://i.pinimg.com/originals/b4/c2/d7/b4c2d7c9fb28e69bff7ec8a1e37b8b42.jpg"
-          alt="Sunset in the mountains"
+          src={randomImage}
+          alt="Article banner"
         />
       </div>
       <div className="px-6 py-4">

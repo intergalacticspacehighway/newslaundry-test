@@ -1,5 +1,4 @@
 import React from "react";
-import { useArticles } from "../services";
 import { ArticleItem } from "./article-item";
 
 export function Articles({ data }) {

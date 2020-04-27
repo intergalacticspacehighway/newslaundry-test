@@ -17,7 +17,7 @@ export function App() {
         <hr />
       </div>
       <Banner coverNews={data.items[0]} />
-      <div className="lg:px-20">
+      <div className="lg:px-20 md:px-10 sm:px-5 xs:px-5 px-5">
         <Articles data={data} />
       </div>
     </div>

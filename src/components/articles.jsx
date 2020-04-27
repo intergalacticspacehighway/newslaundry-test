@@ -1,9 +1,10 @@
 import React from "react";
 import { ArticleItem } from "./article-item";
+import { Articles as MasonryArticles } from "./Masonry";
 
 export function Articles({ data }) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+    <MasonryArticles>
       {data.items.map((article) => {
         return (
           <div className="mx-5 my-5" key={article.id}>
@@ -11,7 +12,7 @@ export function Articles({ data }) {
           </div>
         );
       })}
-    </div>
+    </MasonryArticles>
   );
 }
 

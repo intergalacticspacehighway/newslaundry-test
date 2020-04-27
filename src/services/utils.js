@@ -1,5 +1,5 @@
 export const randomImages = [
-  "https://gumlet.assettype.com/newslaundry%2F2020-03%2Ff3b571ed-1aae-4de6-8c62-e026e10dd6fb%2Fhighway_on_my_podcast_2.jpg?auto=format%2Ccompress&fit=max&format=webp&w=1140&dpr=2.0",
+  "https://www.digipen.edu/sites/default/files/public/img/academics/01-hero/digipen-student-animation-adija.jpg",
   "https://www.apa.org/images/2019-11-politics-article-2_tcm7-264007.jpg",
   "https://www.askforevidence.org/system/featured_pictures/are-political-parties-prepared-to-be-asked-for-evidence/splash/n-DEMOCRACY-VOTING-HANDS-628x314.jpg?1499954470",
   "https://images.summitmedia-digital.com/esquiremagph/images/2019/04/04/Why-Opposing-the-Administration-Isnt-Anti-Government.jpg",
@@ -18,4 +18,8 @@ export const randomImages = [
   "https://api.time.com/wp-content/uploads/2020/03/india-coronavirus.jpg?quality=85&crop=0px%2C0px%2C1024px%2C536px&resize=1200%2C628&strip",
   "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202004/Screenshot_2020-04-19_at_12.44-770x433.png?Cx8KghGeyt6LNVVIOJ_SQxLfoCNxcv.J",
   "https://static.vecteezy.com/system/resources/previews/000/225/241/original/hand-gesture-modern-pop-art-vector.jpg",
+  "https://bridgeportartscouncil.org/wp-content/uploads/2018/02/bacc-jahmane.jpg",
+  "https://cdn.vox-cdn.com/thumbor/oulgNYAI6_GNIpAhensHjmGAnH8=/0x0:6244x3500/1200x800/filters:focal(2623x1251:3621x2249)/cdn.vox-cdn.com/uploads/chorus_image/image/62641921/shutterstock_721678087.0.jpg",
+  "https://miro.medium.com/max/12000/1*LP3Kipm89xSNh0GAnFHAuw@2x.jpeg",
+  "https://blog.wan-ifra.org/sites/default/files/imagecache/default_col_8/field_blog_entry_image/stgraphic.png",
 ];

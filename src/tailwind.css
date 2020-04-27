@@ -7,3 +7,12 @@
 .font-sans {
   font-family: "Nunito Sans", sans-serif;
 }
+
+.imperfect-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 4px #41403e;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}

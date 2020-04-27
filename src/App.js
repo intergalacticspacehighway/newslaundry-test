@@ -1,16 +1,24 @@
 import React from "react";
 import { Articles, Menu, Banner } from "./components";
 import "./tailwind.generated.css";
+import { useArticles } from "./services";
 
 export function App() {
+  const {
+    state: { data, loading, error },
+  } = useArticles();
+
+  console.log("data ", data);
   return (
-    <div className="lg:px-20 font-sans">
-      <div className="mx-5">
+    <div className="font-sans">
+      <div className="mx-5 lg:px-20 ">
         <Menu />
         <hr />
-        <Banner></Banner>
       </div>
-      <Articles />
+      <Banner coverNews={data.items[0]} />
+      <div className="lg:px-20">
+        <Articles data={data} />
+      </div>
     </div>
   );
 }

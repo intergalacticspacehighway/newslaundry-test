@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { randomImages } from "../services/utils";
 
 export function Banner({ coverNews }) {
+  useEffect(() => {
+    if (coverNews) {
+      window.document.querySelector("#banner-placeholder").style.display =
+        "none";
+    }
+  }, [coverNews]);
   if (!coverNews) {
     return null;
   }
+
   return (
     <a
       href={coverNews.story.url}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Articles, Menu, Banner } from "./components";
 import "./tailwind.generated.css";
+import "./components/placeholders.css";
 import { useArticles } from "./services";
 
 export function App() {

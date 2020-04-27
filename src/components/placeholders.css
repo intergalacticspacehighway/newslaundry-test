@@ -1,0 +1,68 @@
+:root {
+  --gray-light: #ececed;
+  --gray-accent: #e9e9ea;
+}
+
+.placeholder-block {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 0.125rem;
+}
+
+/* Shared placeholder styles. */
+.placeholder-block--loading::before,
+.placeholder-block--loading::after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(
+    110deg,
+    var(--gray-light) 73%,
+    var(--gray-accent) 75%,
+    var(--gray-light) 77%,
+    var(--gray-light) 78%,
+    var(--gray-accent) 84%,
+    var(--gray-accent) 88%,
+    var(--gray-light) 94%,
+    var(--gray-light) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 0 center;
+  border-radius: inherit;
+  animation: 2s ease-in-out loading infinite;
+}
+
+/* Image placeholder. */
+.placeholder-block--loading::before {
+  width: 100%;
+  height: 400px;
+}
+
+/* Text placeholder. */
+.placeholder-block--loading::after {
+  animation-delay: 50ms;
+  width: 92%;
+  height: 1rem;
+  margin-top: 0.75rem;
+}
+
+.placeholder-block__image {
+  border-radius: inherit;
+  max-width: 100%;
+}
+
+.placeholder-block__content {
+  margin: 0.5rem 0 0;
+  line-height: 1;
+}
+
+@keyframes loading {
+  0% {
+    background-position-x: 0;
+  }
+  40%,
+  100% {
+    background-position-x: -200%;
+  }
+}

@@ -5,6 +5,7 @@ const fetchArticles = async () => {
   //   "https://cors-anywhere.herokuapp.com/https://ace.qtstage.io/api/v1/collections/entertainment"
   // );
   // const body = await res.json();
+  await delay(500);
   const body = require("./data.json");
   return body;
 };
@@ -46,3 +47,9 @@ export const useArticles = () => {
 
   return { state, refetch: fetchData };
 };
+
+async function delay(duration) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, duration);
+  });
+}
